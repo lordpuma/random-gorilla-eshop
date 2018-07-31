@@ -1,0 +1,26 @@
+<div id="showcase">
+ </div>
+
+<section class="filter">
+  <div class="container">
+  <ul>
+    <li>ŘAZENÍ</li>
+    <li>VELIKOST</li>
+    <li>BARVA</li>
+    <li>CENA</li>
+    <li>DRUH</li>
+  </ul>
+</div>
+</section>
+
+
+<section class="offering">
+  <div class="tshirt" *ngFor="let product of products">
+    <a [routerLink]="['/eshop/detail/1']">
+    <img src="assets/img/triko.png"/>
+    <p><span>{{product.name}}</span></p>
+    <p>{{product.price.random}}RDM</p>
+    <p>{{product.price.czk}} CZK</p>
+    </a>
+  </div>
+</section>

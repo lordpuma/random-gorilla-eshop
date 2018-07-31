@@ -1,0 +1,58 @@
+
+<div class="product">
+<section class="product-info">
+  <img src=""/>
+    <p>RG PREMIERRE JE
+PRVNÍ VYROBENÁ KOLEKCE
+ZNAČKY
+RANDOM GORILLA.
+PRVNÍ TRIČKO TÉTO
+KOLEKCE BYLO VYROBENO
+21.6. 2017</p>
+    <p>TYP: UNISEX TRIČKO</p>
+    <p>BARVA: ŽLUTÁ</p>
+    <p>MATERIÁL: 92% BAVLNA, 8% ELASTAN</p>
+    <p>PRANÍ: 30°C</p>
+    <p>KÓD PRODUKTU: 12345</p>
+</section>
+  <div class="tshirt">
+    <img src="assets/img/triko.png"/>
+  </div>
+</div>
+
+  <section class="selection">
+    <h1>PREMIERRE</h1>
+    <!-- tady by měl být ten výběr ostatních trik co vypadaj stejně -->
+    <!-- Tohle jsou jine fotky stejneho trika IMO -->
+    <p>18 RDM | 1000 CZK</p>
+    <ul id="size">
+      <li>VELIKOST S</li>
+      <li>VELIKOST XS</li>
+      <li>VELIKOST M</li>
+      <li>VELIKOST L</li>
+      <li>VELIKOST XL</li>
+      <li>VELIKOST XXL</li>
+    </ul>
+    <div class="color-selection">
+      </div>
+      <button class="button01" type="submit" action="">DO KOŠÍKU >></button>
+      <!-- srdíčko -->
+      <p>PŘIDAT DO SEZNAMU PŘÁNÍ</p>
+</section>
+
+
+
+
+<div class="recommended">
+  <h1>TAKY BY SE TI MOHLO LÍBIT</h1>
+  <section class="offering">
+    <div *ngFor="let product of [0,1,2,3,4]" class="tshirt">
+      <a [routerLink]="['/eshop/detail/' + product]">
+      <img src="assets/img/triko.png"/>
+      <p><span>RG CLASSIC 2018</span></p>
+      <p>69RDM</p>
+      <p>6969 CZK</p>
+      </a>
+    </div>
+  </section>
+</div>

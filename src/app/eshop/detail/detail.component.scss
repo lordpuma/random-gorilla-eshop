@@ -1,0 +1,31 @@
+
+.product {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+
+.product .product-info {
+  float: left;
+  font-size: 20px;
+  width: 50%;
+}
+
+.product .tshirt {
+  float: right;
+  display: inline-block;
+  width: 50%;
+}
+
+.product, .selection {
+  height: 50%;
+
+}
+
+.recommended {
+}
+
+.recommended h1{
+  padding: none;
+  float: left;
+}

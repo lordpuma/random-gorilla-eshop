@@ -1,1 +1,167 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  font: 20px/1.5 Raleway;
+  padding: 0;
+  margin: 0 3% 0 3%;
+  background-color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.button01 {
+  background-color: yellow;
+  outline: none;
+  border: 2px solid black;
+  padding: none;
+  height: 50px;
+  width: 200px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+
+.button02 {
+  background-color: #e0218a;
+  outline: none;
+  border: none;
+  padding: none;
+  height: 80px;
+  width: 400px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+
+
+
+
+
+
+header {
+  background-color: white;
+  color: black;
+  min-height: 70px;
+  padding-top: 30px;
+}
+
+header a{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding img{
+  float: left;
+  margin: 0;
+  width: 30%;
+  height: auto;
+}
+
+header nav {
+  float: right;
+}
+
+
+#showcase {
+  min-height: 400px;
+  background: url('assets/img/showcase1.png') no-repeat;
+}
+
+.filter {
+  padding-top: 10px;
+  width: 100%;
+  margin-left: 15%;
+}
+
+.filter ul{
+  width: 100%;
+  margin: auto;
+}
+
+.filter li{
+  float: left;
+  padding: 0 20px 0 20px;
+}
+
+.offering {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.offering img{
+  display: inline-block;
+}
+
+.offering .tshirt {
+  display: inline-block;
+  line-height: normal;
+  font-size: 15px;
+  padding: 0 10px 0 10px;
+  font-weight: bold;
+}
+
+.tshirt span {
+  font-size: 17px;
+}
+
+.footer {
+  background-color: lightseagreen;
+  width: 100%;
+  height: 120px;
+  margin: 300px 0 0 0;
+  padding: 25px 0 25px 0;
+  overflow: hidden;
+}
+
+.footer .links {
+  float: left;
+  font-size: 25px;
+  margin-left: 2%;
+}
+
+.footer .newsletter {
+  float: right;
+  margin-right: 5%;
+  font-size: 22px;
+}
+
+.newsletter input {
+  outline: none;
+  width: 175px;
+  border: 2px solid black;
+  height: 30px;
+  font-size: 15px;
+  color: black;
+  background-color: white;
+}
+
+.newsletter button {
+  padding-left: 20px;
+}
