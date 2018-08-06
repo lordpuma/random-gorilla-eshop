@@ -1,31 +1,83 @@
 
+
+      /* GLOBAL COLOR VARIABLES */
+$random-yellow: #ffdc0e;
+$random-pink: #e6345f;
+$random-green: #16b0a3;
+
+
+.stripe {
+  background: linear-gradient(to right, $random-yellow 50%, white 50%);
+  width: 100%;
+  height: 100%;
+}
+
 .product {
-  float: left;
-  width: 50%;
+  margin-top: 2%;
+  width: 100%;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 50% 20% 30%;
+  grid-template-areas: "info tshirt selection";
+  height: 50%;
 }
 
 .product .product-info {
-  float: left;
+  font-size: 15px;
+  grid-area: info;
+  display: inline;
+  text-align: center;
+  height: 70%;
+}
+
+.product-info .description {
+  margin-top: 10%;
+}
+
+.product-info .description p:nth-child(1) {
   font-size: 20px;
-  width: 50%;
+  font-weight: bold;
 }
 
 .product .tshirt {
-  float: right;
-  display: inline-block;
-  width: 50%;
+  grid-area: tshirt;
 }
 
 .product, .selection {
-  height: 50%;
-
+  grid-area: selection;
+  text-align: center;
 }
 
-.recommended {
+.selection h1 {
+  color: $random-pink;
+  font-size: 40px;
+}
+
+.selection button {
+  padding-left: 20px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-weight: 600;
+  font-size: 25px;
+  background: $random-yellow;
+  border-radius: 3px;
 }
 
 .recommended h1{
-  padding: none;
   float: left;
+  width: 100%;
+}
+
+.recommended .offering:nth-child(3) {
+  padding-bottom: 200px;
+}
+
+.image-substitude {
+  height: 100%;
+  width: 20%;
+  grid-area: info;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
 }

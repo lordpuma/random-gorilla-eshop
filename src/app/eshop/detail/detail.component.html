@@ -1,31 +1,38 @@
 
+<div class="stripe"> <!-- YELLOW STRIPE THROUGH WHOLE PAGE -->
 <div class="product">
 <section class="product-info">
+  <!-- tady má bejt ten divnej obrázek-->
   <img src=""/>
+  <!-- misto toho zatim div -->
+  <div class="image-substitude">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+<section class="description">
     <p>RG PREMIERRE JE
-PRVNÍ VYROBENÁ KOLEKCE
-ZNAČKY
-RANDOM GORILLA.
-PRVNÍ TRIČKO TÉTO
-KOLEKCE BYLO VYROBENO
-21.6. 2017</p>
-    <p>TYP: UNISEX TRIČKO</p>
-    <p>BARVA: ŽLUTÁ</p>
-    <p>MATERIÁL: 92% BAVLNA, 8% ELASTAN</p>
-    <p>PRANÍ: 30°C</p>
-    <p>KÓD PRODUKTU: 12345</p>
-</section>
+      PRVNÍ VYROBENÁ KOLEKCE
+      ZNAČKY
+      RANDOM GORILLA.
+      PRVNÍ TRIČKO TÉTO
+      KOLEKCE BYLO VYROBENO
+      21.6. 2017</p>
+    <p><b>TYP</b>: UNISEX TRIČKO</p>
+    <p><b>BARVA</b>: ŽLUTÁ</p>
+    <p><b>MATERIÁL</b>: 92% BAVLNA, 8% ELASTAN</p>
+    <p><b>PRANÍ</b>: 30°C</p>
+    <p><b>KÓD PRODUKTU</b>: 12345</p>
+  </section>
+  </section>
+
   <div class="tshirt">
     <img src="assets/img/triko.png"/>
   </div>
-</div>
+
 
   <section class="selection">
     <h1>PREMIERRE</h1>
     <!-- tady by měl být ten výběr ostatních trik co vypadaj stejně -->
     <!-- Tohle jsou jine fotky stejneho trika IMO -->
-    <p>18 RDM | 1000 CZK</p>
-    <ul id="size">
+    <p><b>18 RDM</b> | 1000 CZK</p>
+    <ul class="size">
       <li>VELIKOST S</li>
       <li>VELIKOST XS</li>
       <li>VELIKOST M</li>
@@ -35,16 +42,16 @@ KOLEKCE BYLO VYROBENO
     </ul>
     <div class="color-selection">
       </div>
-      <button class="button01" type="submit" action="">DO KOŠÍKU >></button>
+      <button class="" type="submit" action="">DO KOŠÍKU >></button>
       <!-- srdíčko -->
       <p>PŘIDAT DO SEZNAMU PŘÁNÍ</p>
 </section>
-
+</div>
 
 
 
 <div class="recommended">
-  <h1>TAKY BY SE TI MOHLO LÍBIT</h1>
+  <h1>TAKÉ BY SE TI MOHLO LÍBIT</h1>
   <section class="offering">
     <div *ngFor="let product of [0,1,2,3,4]" class="tshirt">
       <a [routerLink]="['/eshop/detail/' + product]">
@@ -55,4 +62,15 @@ KOLEKCE BYLO VYROBENO
       </a>
     </div>
   </section>
+  <section class="offering">
+    <div *ngFor="let product of [0,1,2,3,4]" class="tshirt">
+      <a [routerLink]="['/eshop/detail/' + product]">
+      <img src="assets/img/triko.png"/>
+      <p><span>RG CLASSIC 2018</span></p>
+      <p>69RDM</p>
+      <p>6969 CZK</p>
+      </a>
+    </div>
+  </section>
+</div>
 </div>
