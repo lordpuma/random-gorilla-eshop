@@ -8,8 +8,6 @@ $random-green: #16b0a3;
 
 .stripe {
   background: linear-gradient(to right, $random-yellow 50%, white 50%);
-  width: 100%;
-  height: 100%;
 }
 
 .product {
@@ -26,21 +24,22 @@ $random-green: #16b0a3;
   font-size: 15px;
   grid-area: info;
   display: inline;
-  text-align: center;
+  text-align: left;
   height: 70%;
 }
 
 .product-info .description {
-  margin-top: 10%;
+  font-size: 25px;
 }
 
 .product-info .description p:nth-child(1) {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .product .tshirt {
   grid-area: tshirt;
+  margin-top: 200px;
 }
 
 .product, .selection {
@@ -55,13 +54,28 @@ $random-green: #16b0a3;
 
 .selection button {
   padding-left: 20px;
-  width: 100%;
-  height: 50px;
+  width: 80%;
+  height: 60px;
   border: none;
-  font-weight: 600;
   font-size: 25px;
+  font-weight: 1000;
   background: $random-yellow;
   border-radius: 3px;
+}
+
+.color-selection {
+  width: 100%;
+  display: table;
+}
+
+.color-selection input {
+  width: 20%;
+  height: auto;
+  float: left;
+  padding: none;
+  margin: none;
+  outline: none;
+  background: $random-pink;
 }
 
 .recommended h1{
@@ -74,7 +88,7 @@ $random-green: #16b0a3;
 }
 
 .image-substitude {
-  height: 100%;
+  height: 1000px;
   width: 20%;
   grid-area: info;
   float: left;

@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <header>
   <div id="branding">
-    <a [routerLink]="['/eshop']"><img src="assets/img/logo.png"/></a>
+    <a [routerLink]="['/eshop']"><img src="assets/img/logotyp.png"/></a>
 </div>
 
 <nav>
@@ -33,3 +33,19 @@
     <button type="submit" href="#" action="#" class="">JOOOOOO >></button>
   </section>
 </div>
+
+<section class="trending">
+  <h1>OPIČÁRNY, CO TEĎ LETÍ</h1>
+  <div *ngFor="let product of [0,1,2]" class="tshirt">
+    <a [routerLink]="['/eshop/detail/' + product]">
+    <img src="assets/img/triko.png"/>
+    <p><span>RG CLASSIC 2018</span></p>
+    <p>69RDM</p>
+    <p>6969 CZK</p>
+    </a>
+  </div>
+</section>
+
+<section class="not-trending">
+  <h1>OPIČÁRNY, CO TEĎ NELETÍ</h1>
+</section>
