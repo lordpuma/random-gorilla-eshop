@@ -79,8 +79,11 @@ $random-green: #16b0a3;
 }
 
 .recommended h1{
-  float: left;
   width: 100%;
+  margin-left: 15%;
+  font-family: Raleway;
+  font-weight: 1000;
+  font-style: italic;
 }
 
 .recommended .offering:nth-child(3) {

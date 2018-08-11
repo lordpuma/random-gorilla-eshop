@@ -93,7 +93,7 @@ header nav {
 }
 
 .filter ul{
-  min-width: 100%;
+  min-width: 700px;;
 }
 
 .filter li{
@@ -130,7 +130,7 @@ header nav {
   font-size: 17px;
 }
 
-.trending, .not-trending  {
+.trending, .not-trending, .random-blog {
   display: none;
 }
 
@@ -246,10 +246,11 @@ header nav {
     display: none;
   }
 
-  .trending, .not-trending {
+  .trending, .not-trending, .random-blog {
     display: block;
     width: 100%;
     margin: 10% 0 0 0;
+    min-height: 200px;
 
   }
 
@@ -277,5 +278,30 @@ header nav {
     display: none;
   }
 
+  .random-blog {
+    width: 100%;
+    background-color: $random-pink;
+  }
 
+  .random-blog div {
+    width: 25%;
+    height: 100%;
+    border: 5px solid white;
+    font-weight: bold;
+    float: left;
+    display: inline-block;
+    font-size: 10px;
+    margin: 0px auto;
+  }
+
+  .random-blog div h1 {
+    text-decoration: none;
+
+  }
+
+  .random-blog h1 {
+    text-decoration: line-through;
+    width: 100%;
+    text-align: center
+    }
 }
