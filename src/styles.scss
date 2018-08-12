@@ -131,8 +131,60 @@ header nav {
 }
 
 .trending, .not-trending, .random-blog {
+  display: block;
+  width: 100%;
+  margin: 10% 0 0 0;
+  min-height: 200px;
+  border: 1px solid black;
+  overflow: hidden;
+
+}
+
+.trending, .not-trending h1 {
+  text-decoration: line-through;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  padding: 0;
+  margin: 0 0 10% 0;
+}
+
+.trending a {
+  float: left;
+  display: inline-block;
+  width: 33%;
+  height: auto;
+}
+
+.trending a img {
+  width: auto;
+}
+
+.trending a p {
   display: none;
 }
+
+.random-blog div {
+  width: 25%;
+  height: 100%;
+  border: 5px solid white;
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  font-size: 10px;
+  margin: 0px auto;
+}
+
+.random-blog div h1 {
+  text-decoration: none;
+
+}
+
+.random-blog h1 {
+  text-decoration: line-through;
+  width: 100%;
+  text-align: center
+  }
 
 
       /* FOOTER */
@@ -248,10 +300,6 @@ header nav {
 
   .trending, .not-trending, .random-blog {
     display: block;
-    width: 100%;
-    margin: 10% 0 0 0;
-    min-height: 200px;
-
   }
 
   .trending, .not-trending h1 {
@@ -270,13 +318,6 @@ header nav {
     height: auto;
   }
 
-  .trending a img {
-    width: 100%;
-  }
-
-  .trending a p {
-    display: none;
-  }
 
   .random-blog {
     width: 100%;
@@ -296,7 +337,6 @@ header nav {
 
   .random-blog div h1 {
     text-decoration: none;
-
   }
 
   .random-blog h1 {
