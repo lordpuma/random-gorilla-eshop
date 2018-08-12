@@ -165,14 +165,21 @@ header nav {
 }
 
 .random-blog div {
-  width: 25%;
+  width: 32%;
   height: 100%;
-  border: 5px solid white;
+  border: 7px solid white;
   font-weight: bold;
   float: left;
   display: inline-block;
+  text-align: center;
   font-size: 10px;
   margin: 0px auto;
+}
+
+.random-blog div button {
+  width: 100%;
+  height: 20%;
+  background-color: white;
 }
 
 .random-blog div h1 {
@@ -193,7 +200,7 @@ header nav {
   background-color: $random-green;
   width: 100%;
   min-height: 200px;
-  margin: 0 0 0 0;
+  margin: 100px 0 0 0;
   padding: 10% 0 10% 0;
   overflow: hidden;
   font-family: Raleway;
