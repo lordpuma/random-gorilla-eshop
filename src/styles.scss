@@ -5,7 +5,13 @@
       /* GLOBAL COLOR VARIABLES */
 $random-yellow: #ffdc0e;
 $random-pink: #e6345f;
+$random-pink-dark: #B21E4B;
 $random-green: #16b0a3;
+$random-blue: #27BAE1;
+$random-blue-dark: #2696B1;
+$random-gray: #ADB0B1;
+$random-gray-dark: #7D7F80;
+
 
       /* GLOBAL */
 
@@ -209,9 +215,18 @@ header nav {
   }
 
 
+.facebook {
+  overflow:hidden;
+  display: block;
+  margin: 0px auto;
+  margin-top: 5%;
+  border-radius: 2px;
+}
+
+
       /* FOOTER */
 
-.footer {
+footer {
   background-color: $random-green;
   width: 100%;
   min-height: 200px;
@@ -223,19 +238,19 @@ header nav {
   padding: 10px 0 10px 0;
 }
 
-.footer .links {
+footer .links {
   float: left;
   font-size: 35px;
   font-weight: 1000;
 }
 
-.footer .newsletter {
+footer .newsletter {
   float: right;
   width: 25%;
   line-height: 1.4;
 }
 
-.footer .newsletter, .links{
+footer .newsletter, .links{
   margin: 3% 5% 0 5%;
   display: inline-block;
 }
@@ -275,16 +290,15 @@ header nav {
 
 @media only screen and (max-width: 600px){
   body, html {
-    padding: none;
-    margin: 0 0 0 0;
+    padding: 0;
+    margin: 0;
     width: 100%;
   }
 
   header {
     min-height: 20px;
-    position: absolute;;
+    position: absolute;
     background-color: $random-yellow;
-    padding: 20px 0 20px 0;
   }
 
   header #branding img {
@@ -295,6 +309,9 @@ header nav {
 
   header nav {
     width: 100%;
+    min-height: 70px;
+    margin-top: 5%;
+    background-color: white;
   }
 
   header nav ul {
@@ -311,7 +328,7 @@ header nav {
     display: none;
   }
 
-  .footer {
+  footer {
     display: none;
   }
 
@@ -321,6 +338,7 @@ header nav {
 
   .trending, .not-trending, .random-blog {
     display: block;
+    min-height: 100px;
   }
 
   .trending, .not-trending h1 {

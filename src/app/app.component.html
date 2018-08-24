@@ -7,7 +7,7 @@
 <nav>
   <ul>
     <li><a ng-href="wishlist.html">MŮJ SEZNAM PŘÁNÍ</a></li>
-    <li><a ng-href="registrace.html">REGISTRACE</a></li>
+    <li><a ng-href="account.html">MŮJ ÚČET</a></li>
     <li><a ng-href="prihlaseni.html">PŘIHLÁŠENÍ</a></li>
   </ul>
 </nav>
@@ -51,11 +51,27 @@
   </div>
 </section>
 
-<div class="footer">
+<section class="trending">
+  <h1>LIMITED EDITION</h1>
+  <div *ngFor="let product of [0,1,2]" class="tshirt">
+    <a [routerLink]="['/eshop/detail/' + product]">
+    <img src="assets/img/triko.png"/>
+    <p><span>RG CLASSIC 2018</span></p>
+    <p>69RDM</p>
+    <p>6969 CZK</p>
+    </a>
+  </div>
+</section>
+
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frandomgorilla%2F&tabs&width=500&height=120&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="500" height="120" class="facebook" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+
+
+
+<footer>
     <ul class="links">
       <li><a href="reklamace.html">VRÁCENÍ A REKLAMACE></a></li>
       <li><a href="kontakt.html">KONTAKTUJTE NÁS></a></li>
-      <li><a href="">MY, OPIČÁCI></a></li>
     </ul>
   <section class="newsletter">
     <form action="#">
@@ -65,4 +81,4 @@
     </form>
     <button type="submit" href="#" action="#" class="">JOOOOOO >></button>
   </section>
-</div>
+</footer>
