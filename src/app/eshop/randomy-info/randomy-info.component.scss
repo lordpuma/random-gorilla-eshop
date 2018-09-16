@@ -1,0 +1,27 @@
+$random-yellow: #ffdc0e;
+$random-pink: #e6345f;
+$random-pink-dark: #B21E4B;
+$random-green: #16b0a3;
+$random-blue: #27BAE1;
+$random-blue-dark: #2696B1;
+$random-gray: #ADB0B1;
+$random-gray-dark: #7D7F80;
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "change-random random-about";
+}
+
+.change-random {
+  background-color: $random-green;
+  font-size: 40px;
+}
+
+.change-random button {
+  min-height: 100px;
+  width: 30%;
+  background-color: $random-pink;
+}

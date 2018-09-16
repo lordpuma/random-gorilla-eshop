@@ -1,11 +1,7 @@
-
-<div class="stripe"> <!-- YELLOW STRIPE THROUGH WHOLE PAGE -->
+<a href="./registrace.component.html">haha</a>
 <div class="product">
 <section class="product-info">
-  <!-- tady má bejt ten divnej obrázek-->
-  <img src=""/>
   <!-- misto toho zatim div -->
-  <div class="image-substitude">tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek tady by měl být obrázek</div>
 <section class="description">
     <p>RG PREMIERRE JE
       PRVNÍ VYROBENÁ KOLEKCE
@@ -32,19 +28,15 @@
     <!-- tady by měl být ten výběr ostatních trik co vypadaj stejně -->
     <!-- Tohle jsou jine fotky stejneho trika IMO -->
     <p><b>18 RDM</b> | 1000 CZK</p>
-    <div>
-  <input type="checkbox" id="toggle" class="unfolder"/>
-  <label for="toggle" class="toggle-label">Velikost<span class="fold-icon">&#9660;</span><span class="unfold-icon">&#9654;</span></label>
 
-  <ul class="fold">
-      <li>VELIKOST S</li>
-      <li>VELIKOST XS</li>
-      <li>VELIKOST M</li>
-      <li>VELIKOST L</li>
-      <li>VELIKOST XL</li>
-      <li>VELIKOST XXL</li>
-   </ul>
-</div>
+  <select size="1" class="select-size">
+      <option>VELIKOST <b>S</b></option>
+      <option>VELIKOST <b>XS</b></option>
+      <option>VELIKOST <b>M</b></option>
+      <option>VELIKOST <b>L</b></option>
+      <option>VELIKOST <b>XL</b></option>
+      <option>VELIKOST <b>XXL</b></option>
+   </select>
 
     <div class="color-selection">
       <h1>Vyber si barvu</h1>
@@ -74,7 +66,7 @@
 
 
 <div class="recommended">
-  <h1>TAKÉ BY SE TI MOHLO LÍBIT</h1>
+  <h1>SE TAKÉ BY LÍBIT MOHLO TI</h1>
   <section class="offering">
     <div *ngFor="let product of [0,1,2,3,4]" class="tshirt">
       <a [routerLink]="['/eshop/detail/' + product]">
@@ -95,5 +87,4 @@
       </a>
     </div>
   </section>
-</div>
 </div>

@@ -1,0 +1,49 @@
+<header>
+  <div id="branding">
+    <a [routerLink]="['/eshop']"><img src="assets/img/logotyp.png"/></a>
+</div>
+
+<nav>
+  <ul>
+    <li><a ng-href="wishlist.html">MŮJ SEZNAM PŘÁNÍ</a></li>
+    <li><a ng-href="registrace.html">REGISTRACE</a></li>
+    <li><a ng-href="prihlaseni.html">PŘIHLÁŠENÍ</a></li>
+  </ul>
+</nav>
+<section class="shopping-cart">
+  <!-- vůbec nevim jak ten košík bude fungovat, nechám to na tobě :D -->
+</section>
+</header>
+
+<router-outlet></router-outlet>
+
+<h1>REGISTRACE</h1>
+<h2>Staň se součástí něčeho většího</h2>
+<h3>A buď první, kdo se dozví o těch nejžhavějších novinkách</h3>
+
+<form action="">
+  <label for="name">JMÉNO</label>
+  <input type="text" placeholder="" name="name" required>
+  <label for="surname">PŘÍJMENÍ</label>
+  <input type="text" placeholder="" name="surname" required>
+  <label for="birthdate">DATUM NAROZENÍ</label>
+  <input type="text" placeholder="" name="birthdate" required>
+  <label for="email">E-MAIL</label>
+  <input type="text" placeholder="" name="email" required>
+  <label for="password">HESLO</label>
+  <input type="password" placeholder="" name="password" required>
+  <label for="street">ULICE A ČÍSLO POPISNÉ</label>
+  <input type="text" placeholder="" name="street" required>
+  <label for="city">MĚSTO</label>
+  <input type="text" placeholder="" name="city" required>
+  <label for="zip">PSČ</label>
+  <input type="text" placeholder="" name="zip" required>
+  <label for="phone">TELEFONNÍ ČÍSLO</label>
+  <input type="text" placeholder="" name="phone" required>
+</form>
+
+<!-- plus ještě JSEM SAMEC/SAMICE -->
+
+<button class="signup-btn">ZAREGISTROVAT</button>
+<p>nebo</p>
+<button class="signin-btn">PŘIHLÁSIT</button>
